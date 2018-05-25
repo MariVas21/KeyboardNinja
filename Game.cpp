@@ -176,7 +176,7 @@ void Time (clock_t delay) {
 		if (OutText.size() == InpText.size()) {
 				if (OutText  != InpText ) {
 					Beep (160, 220);
-					cout << "\n Вы проиграли! \n";
+					cout << "\n Вы проиграли!";
 					InputScore(count);
 					exit(1);
 				}
@@ -185,7 +185,8 @@ void Time (clock_t delay) {
 					count+=10;
 					cout << "\n Верно!";
 					Time (delay);
-				}		}
+				}	
+					}
 }
     cout << "\n Вы проиграли! Время вышло";
 	system ("cls");

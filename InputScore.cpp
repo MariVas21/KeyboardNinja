@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <iostream>
 #include <string>
+#include "ScoreM.h"
 
 using namespace std;
 
@@ -20,18 +21,10 @@ while (i<1)
  cout<<"\n ¬ведите свое им€:\n "; 
 cin>>Re.name;
 Re.score=count;
-
-
 fwrite(&Re,sizeof(Re),1,tf);
 fclose(tf);
 i++;
 }
-tf=fopen("file1.txt","rb"); // открытие бинарного файла дл€ чтени€
-fread(&Re,sizeof(Re),1,tf); // чтение из файла одной структуры Re
-
-while (!feof(tf))
-{ printf("%10s %4d \n",Re.name,Re.score);
-fread(&Re,sizeof(Re),1,tf);
-}
+ScoreM();
 system ("PAUSE >> NULL");
 }
