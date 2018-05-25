@@ -1,0 +1,43 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = x86_64-w64-mingw32-g++.exe
+CC       = x86_64-w64-mingw32-gcc-4.9.2.exe
+WINDRES  = windres.exe
+OBJ      = MenuMain.o Game.o Rules.o Keyboard.o InputScore.o ScoreM.o
+LINKOBJ  = MenuMain.o Game.o Rules.o Keyboard.o InputScore.o ScoreM.o
+LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -m32
+INCS     = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Project1.exe
+CXXFLAGS = $(CXXINCS) -m32 -w -Wall -std=c++11
+CFLAGS   = $(INCS) -m32 -w -Wall -std=c++11
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+MenuMain.o: MenuMain.cpp
+	$(CPP) -c MenuMain.cpp -o MenuMain.o $(CXXFLAGS)
+
+Game.o: Game.cpp
+	$(CPP) -c Game.cpp -o Game.o $(CXXFLAGS)
+
+Rules.o: Rules.cpp
+	$(CPP) -c Rules.cpp -o Rules.o $(CXXFLAGS)
+
+Keyboard.o: Keyboard.cpp
+	$(CPP) -c Keyboard.cpp -o Keyboard.o $(CXXFLAGS)
+
+InputScore.o: InputScore.cpp
+	$(CPP) -c InputScore.cpp -o InputScore.o $(CXXFLAGS)
+
+ScoreM.o: ScoreM.cpp
+	$(CPP) -c ScoreM.cpp -o ScoreM.o $(CXXFLAGS)
