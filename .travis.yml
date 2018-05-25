@@ -1,0 +1,3 @@
+Language: c
+compiler: win
+script: make
