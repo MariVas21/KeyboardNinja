@@ -177,10 +177,6 @@ void Time (clock_t delay) {
 				if (OutText  != InpText ) {
 					Beep (160, 220);
 					cout << "\n Вы проиграли! \n";
-					cout << "\n Символы, которые вы напечатали: \n";
-					cin.clear();
-					while(cin.get() != '\n');
-					cin.get();
 					InputScore(count);
 					exit(1);
 				}
