@@ -4,6 +4,9 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
+#include "Game.h"
+#include "Rules.h"
+#include "ScoreM.h"
 
 using namespace std; 
 
@@ -23,9 +26,13 @@ int main(){
 	{
 	case 1: 	
 		system("cls");
-		break;	
+		 Game();
+	    system("cls");
+		goto g;	    
+		 break;	
 	case 2: 	
 		system("cls"); 
+		Rules();
 		getch();
 	    system("cls");
 		goto g;	
@@ -33,6 +40,7 @@ int main(){
 	case 3: 
 		system("cls");
 		printf("Score"); 
+		ScoreM();
 		getch();
 	    system("cls");
 		goto g;	 
