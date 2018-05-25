@@ -26,9 +26,7 @@ int main(){
 	{
 	case 1: 	
 		system("cls");
-		 Game();
-	    system("cls");
-		goto g;	    
+		 Game();    
 		 break;	
 	case 2: 	
 		system("cls"); 
@@ -39,7 +37,6 @@ int main(){
 		break;
 	case 3: 
 		system("cls");
-		printf("Score"); 
 		ScoreM();
 		getch();
 	    system("cls");
