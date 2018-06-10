@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/MariVas21/KeyboardNinja.svg?branch=master)](https://travis-ci.org/MariVas21/KeyboardNinja)
+[![Build Status](https://ci.appveyor.com/project/Maxim82498/keyboardninja/KeyboardNinja.svg?branch=master)](https://ci.appveyor.com/project/Maxim82498/keyboardninja)
