@@ -1,17 +1,17 @@
 # Project: Project1
 # Makefile created by Dev-C++ 5.11
 
-CPP      = x86_64-w64-mingw32-g++.exe
-CC       = x86_64-w64-mingw32-gcc-4.9.2.exe
+CPP      = g++.exe
+CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = MenuMain.o Game.o Rules.o Keyboard.o InputScore.o ScoreM.o
-LINKOBJ  = MenuMain.o Game.o Rules.o Keyboard.o InputScore.o ScoreM.o
-LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -m32
-INCS     = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
-CXXINCS  = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+OBJ      = MenuMain.o Game.o Rules.o Keyboard.o InputScore.o ScoreM.o testmain.o
+LINKOBJ  = MenuMain.o Game.o Rules.o Keyboard.o InputScore.o ScoreM.o testmain.o
+LIBS     = -L"E:/Dev/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32
+INCS     = -I"E:/Dev/Dev-Cpp/MinGW64/include" -I"E:/Dev/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Dev/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"E:/Dev/Dev-Cpp/MinGW64/include" -I"E:/Dev/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Dev/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"E:/Dev/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
 BIN      = Project1.exe
-CXXFLAGS = $(CXXINCS) -m32 -w -Wall -std=c++11
-CFLAGS   = $(INCS) -m32 -w -Wall -std=c++11
+CXXFLAGS = $(CXXINCS) -m32 -w -Wall
+CFLAGS   = $(INCS) -m32 -w -Wall
 RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
@@ -41,3 +41,6 @@ InputScore.o: InputScore.cpp
 
 ScoreM.o: ScoreM.cpp
 	$(CPP) -c ScoreM.cpp -o ScoreM.o $(CXXFLAGS)
+
+testmain.o: testmain.cpp
+	$(CPP) -c testmain.cpp -o testmain.o $(CXXFLAGS)

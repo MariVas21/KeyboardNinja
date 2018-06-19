@@ -1,19 +1,25 @@
-#include <ctime>
+#include <iostream>
 #include <fstream>
-
+#include <string>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string>
+#include <conio.h>
 
 using namespace std;
  
 void ScoreM()
 {
-	 FILE *f = fopen("file1.txt", "a+");
-  time_t rawtime;
-  struct tm * timeinfo;
-  char buffer [80];                               
-  time ( &rawtime );                               
-  timeinfo = localtime ( &rawtime );               
- 
-  strftime (buffer,80," %I:%M%p",timeinfo); 
-  fprintf(f, "%s", buffer);
-  fclose(f);
+	setlocale(LC_ALL, "Russian");
+	char buff[40];
+	int i = 0;
+	ifstream fin("1.txt");
+	cout << "Imya  schet" << endl;
+	while (i < 20){
+			fin.getline{buff, 40};
+			cout << buff << endl;
+			i++;
+	}
+	fin.close();
+	system("PAUSE");
 }
