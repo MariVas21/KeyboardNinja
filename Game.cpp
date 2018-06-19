@@ -44,7 +44,7 @@ void Mas(){
 	for ( ; reg < size; reg++) {
 		TextFile >> TextMas [reg];
 		if (TextFile.eof())
-		break;
+			break;
 	}
 }
 
@@ -184,12 +184,12 @@ void Time (clock_t delay) {
 				if (OutText  != InpText ) {
 					h:
 					system ("cls");		
-					cout << "\n Vi proigrali! Press 'enter', to continue";
+					cout << "\n You lose! Press 'enter', to continue";
 					ch1 = getch();
 					if ( ch1 == 13){
 						Beep (160, 520);
 						system("cls");
-						cout << "\n Vash schet: " << count1;
+						cout << "\n Your score: " << count1;
 						InputScore(count1);
 						ScoreM();
 						exit(1);	
@@ -204,11 +204,11 @@ void Time (clock_t delay) {
 					}	
 				}
 }
-    cout << "\n Vi proigrali! Vashe vremya vishlo";
+    cout << "\n You lose! Time is over";
 	system ("cls");
 	InputScore(count1);
     system ("cls");
     Beep (160, 420);
-   system ("PAUSE");
-   exit(1);
+    system ("PAUSE");
+    exit(1);
 }

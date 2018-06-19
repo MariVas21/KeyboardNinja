@@ -1,7 +1,7 @@
 #include "stdafx.h"
-#include "E:\TRPO\KeyboardNinja\Keyboard.h"
+#include "C:\Users\User\Desktop\trpo\KeyboardNinja-master\Keyboard.h"
 #include <windows.h>
-#include "E:\TRPO\KeyboardNinja\Keyboard.cpp"
+#include "C:\Users\User\Desktop\trpo\KeyboardNinja-master\Keyboard.cpp"
 
 using namespace System;
 using namespace System::Text;

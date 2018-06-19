@@ -30,27 +30,27 @@ g:
 
 	switch (option)
 	{
-	case 1:
-		system("cls");
-		Game();
+		case 1:
+			system("cls");
+			Game();
 		break;
-	case 2:
-		system("cls");
-		Rules();
-		_getch();
-		system("cls");
-		goto g;
+		case 2:
+			system("cls");
+			Rules();
+			_getch();
+			system("cls");
+			goto g;
 		break;
-	case 3:
-		system("cls");
-		ScoreM();
-		_getch();
-		system("cls");
-		goto g;
+		case 3:
+			system("cls");
+			ScoreM();
+			_getch();
+			system("cls");
+			goto g;
 		break;
-	case 4:
-		return 0;
-	default: goto g;
+		case 4:
+			return 0;
+		default: goto g;
 	}
 
 

@@ -5,3 +5,6 @@ lolka 10
 okao 0
 iik 40
 ik 10
+Vika 10
+meow 0
+Kek 30
