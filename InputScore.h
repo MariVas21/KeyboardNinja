@@ -1,3 +1,3 @@
 #define INPUTSCORE_H
 
-int InputScore(int count);
+void InputScore(int count1);

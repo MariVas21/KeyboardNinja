@@ -5,22 +5,29 @@
 #include <time.h>
 #include <stdlib.h>
 #include <ctime>
+#include <string> 
 #include <fstream>
 #include <windows.h>
+#include "ScoreM.h"
 
-int count = 0;
+int count1 = 0;
 	
 using namespace std;
+	const int size = 100;
+	int reg = 0;
+    string TextMas [size];
 
 void Time (clock_t delay);
 
 void Game() {
+	setlocale(LC_ALL, "Russian");
 	char ch;
 	srand (time (NULL) + rand ());
 	float sec=15;
 	SetConsoleCP (1251);
 	SetConsoleOutputCP (1251);
-	cout << "Нажмите пробел, чтобы продолжить";
+	f:
+	cout << "Press space to continue \n";
 	while(!kbhit()){
 		ch=getch();
 		if ( ch == 32){
@@ -28,25 +35,25 @@ void Game() {
 			clock_t delay = sec * CLOCKS_PER_SEC;
 			Time (delay);	
 			}
-		else cout<<"Error";
+		else goto f;
 		}
 }
 
-void Time (clock_t delay) {	
-	srand (time (NULL) + rand ());
-	clock_t start = clock();
-	const int size = 100;
-	int reg = 0;
-    string TextMas [size];
+void Mas(){
 	ifstream TextFile ("TextMas.txt");
 	for ( ; reg < size; reg++) {
 		TextFile >> TextMas [reg];
 		if (TextFile.eof())
 		break;
 	}
-		
+}
+
+void Time (clock_t delay) {	
+	srand (time (NULL) + rand ());
+	clock_t start = clock();
+	Mas();
+	char ch1;	
 	KEYS curKey = NOKEY;
-	
 	string OutText = TextMas [0 + rand () % reg];
 	string InpText;
 	
@@ -175,24 +182,33 @@ void Time (clock_t delay) {
 		 
 		if (OutText.size() == InpText.size()) {
 				if (OutText  != InpText ) {
-					Beep (160, 220);
-					cout << "\n Вы проиграли!";
-					InputScore(count);
-					exit(1);
-				}
+					h:
+					system ("cls");		
+					cout << "\n Vi proigrali! Press 'enter', to continue";
+					ch1 = getch();
+					if ( ch1 == 13){
+						Beep (160, 520);
+						system("cls");
+						cout << "\n Vash schet: " << count1;
+						InputScore(count1);
+						ScoreM();
+						exit(1);	
+					}
+					else goto h;
+			}
 				else {
-					Beep (500, 100);
-					count+=10;
+					Beep (400, 50);
+					count1+=10;
 					cout << "\n Верно!";
 					Time (delay);
-				}	
-					}
+					}	
+				}
 }
-    cout << "\n Вы проиграли! Время вышло";
+    cout << "\n Vi proigrali! Vashe vremya vishlo";
 	system ("cls");
-	InputScore(count);
+	InputScore(count1);
     system ("cls");
-    Beep (160, 220);
-   system ("PAUSE >> NULL");
+    Beep (160, 420);
+   system ("PAUSE");
    exit(1);
 }

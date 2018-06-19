@@ -1,12 +1,6 @@
 #define CTEST_MAIN
 
-#include <ctest.h>
-#include "makefile.win"
-
-char A[10][10];
-
-
-
+#include "ctest.h"
 
 CTEST(insert_key_a, keyPressed_correct)
 {
@@ -227,6 +221,7 @@ CTEST(insert_key_o, keyPressed_correct)
     KEYS expected = o;
     ASSERT_EQUAL(expected, result);
 }
+
 CTEST(insert_key_p, keyPressed_correct)
 {
     // Given
