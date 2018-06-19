@@ -1,6 +1,5 @@
 #include<fstream>
 #include <iostream>
-#include <ctime>
 #include <conio.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,7 +10,6 @@ using namespace std;
 
 
 void InputScore(int count1){
-	//setlocale(LC_ALL, "Russian");
 	struct record { string name; int score;  };
 	int const MAX = 1;
 	int b = 0;

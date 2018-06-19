@@ -1,9 +1,9 @@
-﻿Build started 19.06.2018 16:09:05.
-     1>Project "E:\TRPO\KeyboardNinja\KeyN.vcxproj" on node 2 (Build target(s)).
+﻿Сборка начата 19.06.2018 18:18:10.
+     1>Проект "C:\Users\User\Desktop\trpo\KeyboardNinja-master\KeyN.vcxproj" в узле 2 (целевые объекты Build).
      1>Link:
-         KeyN.vcxproj -> E:\TRPO\KeyboardNinja\Debug\KeyN.exe
-     1>Done Building Project "E:\TRPO\KeyboardNinja\KeyN.vcxproj" (Build target(s)).
+         KeyN.vcxproj -> C:\Users\User\Desktop\trpo\KeyboardNinja-master\Debug\KeyN.exe
+     1>Сборка проекта "C:\Users\User\Desktop\trpo\KeyboardNinja-master\KeyN.vcxproj" завершена (целевые объекты Build).
 
-Build succeeded.
+Сборка успешно завершена.
 
-Time Elapsed 00:00:00.04
+Затраченное время: 00:00:00.13

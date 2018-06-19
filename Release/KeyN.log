@@ -1,35 +1,38 @@
-﻿Build started 19.06.2018 16:11:06.
-     1>Project "E:\TRPO\KeyboardNinja\KeyN.vcxproj" on node 2 (Build target(s)).
+﻿Сборка начата 19.06.2018 22:02:02.
+     1>Проект "C:\Users\Мария\Desktop\KeyboardNinja-master\KeyN.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
-         D:\Visual\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp InputScore.cpp Keyboard.cpp MenuMain.cpp Rules.cpp ScoreM.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _MBCS /EHa /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /analyze- /errorReport:prompt /clr:nostdlib Game.cpp InputScore.cpp Keyboard.cpp MenuMain.cpp Rules.cpp ScoreM.cpp
          Game.cpp
-     1>Game.cpp(25): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>Game.cpp(25): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
      1>Game.cpp(31): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
-                 D:\Visual\VC\include\conio.h(133) : see declaration of 'kbhit'
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\conio.h(133): см. объявление "kbhit"
      1>Game.cpp(32): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
-                 D:\Visual\VC\include\conio.h(131) : see declaration of 'getch'
-     1>Game.cpp(35): warning C4244: 'initializing' : conversion from 'float' to 'clock_t', possible loss of data
-     1>Game.cpp(52): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\conio.h(131): см. объявление "getch"
+     1>Game.cpp(35): warning C4244: инициализация: преобразование "float" в "clock_t", возможна потеря данных
+     1>Game.cpp(52): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
      1>Game.cpp(188): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
-                 D:\Visual\VC\include\conio.h(131) : see declaration of 'getch'
+                 C:\Program Files\Microsoft Visual Studio 12.0\VC\include\conio.h(131): см. объявление "getch"
          InputScore.cpp
          Keyboard.cpp
          MenuMain.cpp
          Rules.cpp
          ScoreM.cpp
+         Создание кода...
+     1>c:\users\мария\desktop\keyboardninja-master\keyboard.cpp(115): warning C4715: keyPressed: значение возвращается не при всех путях выполнения
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /clr:pure /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _MBCS /EHa /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /analyze- /errorReport:prompt "C:\Users\Мария\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
        Link:
-         D:\Visual\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\TRPO\KeyboardNinja\Release\KeyN.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\TRPO\KeyboardNinja\Release\KeyN.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\TRPO\KeyboardNinja\Release\KeyN.lib" /MACHINE:X86 /SAFESEH Release\Game.obj
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Мария\Desktop\KeyboardNinja-master\Release\KeyN.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Мария\Desktop\KeyboardNinja-master\Release\KeyN.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /SAFESEH Release\Game.obj
          Release\InputScore.obj
          Release\Keyboard.obj
          Release\MenuMain.obj
          Release\Rules.obj
          Release\ScoreM.obj
-         Generating code
-     1>e:\trpo\keyboardninja\keyboard.cpp(115): warning C4715: 'keyPressed' : not all control paths return a value
-         Finished generating code
-         KeyN.vcxproj -> E:\TRPO\KeyboardNinja\Release\KeyN.exe
-     1>Done Building Project "E:\TRPO\KeyboardNinja\KeyN.vcxproj" (Build target(s)).
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         LINK : указан параметр /LTCG, но не требуется создание кода; удалите /LTCG из командной строки компоновки для повышения производительности компоновщика
+         KeyN.vcxproj -> C:\Users\Мария\Desktop\KeyboardNinja-master\Release\KeyN.exe
+     1>Сборка проекта "C:\Users\Мария\Desktop\KeyboardNinja-master\KeyN.vcxproj" завершена (целевые объекты Build).
 
-Build succeeded.
+Сборка успешно завершена.
 
-Time Elapsed 00:00:02.17
+Затраченное время: 00:00:29.23
