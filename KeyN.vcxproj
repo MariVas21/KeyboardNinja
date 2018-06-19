@@ -17,8 +17,6 @@
     <ClCompile Include="MenuMain.cpp" />
     <ClCompile Include="Rules.cpp" />
     <ClCompile Include="ScoreM.cpp" />
-    <ClCompile Include="UnitTest.cpp" />
-    <ClCompile Include="UnitTest1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
@@ -38,6 +36,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>Pure</CLRSupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>

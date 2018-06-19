@@ -1,18 +1,9 @@
-﻿Сборка начата 19.06.2018 14:10:37.
-     1>Проект "C:\Users\Мария\Desktop\Трпо курсач\Maks\KeyN\KeyN.vcxproj" в узле 2 (целевые объекты Build).
-     1>ClCompile:
-         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ScoreM.cpp
-         ScoreM.cpp
-       Link:
-         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Мария\Desktop\Трпо курсач\Maks\KeyN\Debug\KeyN.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Мария\Desktop\Трпо курсач\Maks\KeyN\Debug\KeyN.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Мария\Desktop\Трпо курсач\Maks\KeyN\Debug\KeyN.lib" /MACHINE:X86 Debug\Game.obj
-         Debug\InputScore.obj
-         Debug\Keyboard.obj
-         Debug\MenuMain.obj
-         Debug\Rules.obj
-         Debug\ScoreM.obj
-         KeyN.vcxproj -> C:\Users\Мария\Desktop\Трпо курсач\Maks\KeyN\Debug\KeyN.exe
-     1>Сборка проекта "C:\Users\Мария\Desktop\Трпо курсач\Maks\KeyN\KeyN.vcxproj" завершена (целевые объекты Build).
+﻿Build started 19.06.2018 16:09:05.
+     1>Project "E:\TRPO\KeyboardNinja\KeyN.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         KeyN.vcxproj -> E:\TRPO\KeyboardNinja\Debug\KeyN.exe
+     1>Done Building Project "E:\TRPO\KeyboardNinja\KeyN.vcxproj" (Build target(s)).
 
-Сборка успешно завершена.
+Build succeeded.
 
-Затраченное время: 00:00:07.72
+Time Elapsed 00:00:00.04
